@@ -5,7 +5,7 @@ salary = 0 # 이것은 정수다.
 deposit = 0
 
 # 숫자를 입력받고(이것은 문자열) salary 변수 에 저장하시오(넣으시오).
-salary = input("월급을 입력하시오::") # 주의사항, 이것은 문자다.
+salary = input("월급을 입력하시오:") # 주의사항, 이것은 문자다.
 
 # 10년치 월급의 총합을 구하고 그 값을 deposit 에 저장.
 print(type(salary)) #<class, str>
