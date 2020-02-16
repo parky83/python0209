@@ -1,8 +1,6 @@
 # 시작
 # 입력
 a=1
-if a>5:
-    print(a)
-else:
+while a<5:
     a=a+1
-    print(a)
+print(a)
