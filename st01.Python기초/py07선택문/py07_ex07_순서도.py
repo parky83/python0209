@@ -1,6 +1,6 @@
 # 시작
 # 입력
 a=1
-while a<5:
+while a<=5:
     a=a+1
 print(a)

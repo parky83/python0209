@@ -8,6 +8,33 @@
 #     i 는 시작값부터 종료값까지 i를 1씩 증가시키면서 합계를 구해하시오
 # 
 # 합계를 출력하시오
+
+
+i1=input("시작 정수를 입력하세요: ")
+i2=input("종료 정수를 입력하세요: ")
+
+i1=int(i1)
+i2=int(i2)
+
+for x in range(i1, i2+1,1):
+    if x==i1:
+        x1=int(x)
+        print("%s" % (x1), end="+")
+    elif x==i2:
+        x2=int(x)
+        x1=x1+x2
+        print("%s" % (x2))
+    else:
+        x2=int(x)
+        x1=x1+x2
+        print("%s" % (x2), end="+")
+x=x1  
+print("=", x)
+
+
+
+
+
 #
 #
 # ▪ 순서도2

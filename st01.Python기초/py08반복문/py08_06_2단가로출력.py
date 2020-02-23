@@ -8,4 +8,7 @@ for x in range(1,10,1):
     b=a*x
     # x가 9이면 마침표를 찍고
     # x가 9가 아니면 콤마ㅏ를 찍어라
-    print("%s *%2s =%3s" % (a, x, b))
+    if x==9 :
+        print("%s *%2s =%3s" % (a, x, b), end=".")
+    else :
+        print("%s *%2s =%3s" % (a, x, b), end=", ")

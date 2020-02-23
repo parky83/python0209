@@ -9,9 +9,21 @@ prov = "A barking Dog"
 # 문자열 결합 연산자 : +
 # "A barking Dog never Bites!"를 출력하시오.
 
+str2=" never Bites!"
+str3=prov+str2
+print(str3)
+
 # 문자열 반복 연산자 : *
+str4=str3*3
+print(str4)
 
 # 문자열 일치 연산자 : ==
+s09 = "abcde"
+s10 = "abcde"
+if s09==s10:
+    print("same")
+else :
+    print("not same")
 
 
 # 문자열 슬라이싱 연산자 :
@@ -19,8 +31,17 @@ prov = "A barking Dog"
 # 문자열 자체가 리스트 취급을 당하기 때문에 그냥 리스트에서 특정 구문을 빼오듯이 쓰면 된다.
 # (2번째부터 4번째 자리까지 추출:  bar)
 
-# 문제. Dog 를 추출하여 출력하시오
+bar=prov[2:5]
+print(bar)
 
+# 문제. Dog 를 추출하여 출력하시오
+dog=prov[-3:]
+print(dog)
+
+idx=prov.find("Dog")
+if idx !=-1:
+    dog2=prov[idx:idx+3]
+    print(idx, dog2)
 
 # 문자열 추출:
 # "A barking dog"에서 마지막 g 빼고 "A barking do" 를 출력하시오.
