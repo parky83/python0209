@@ -19,7 +19,7 @@
 
 
 # 문자열 포매팅
-"I eat %d apples." % 3
+"I eat %d apples." % (3)
 'I eat 3 apples.'
 
 number = 10
