@@ -8,14 +8,23 @@
 # C:....\py21사용자모듈>   python  입력 후 엔터
 #
 # >>> # import 모듈이름
-# >>> import mod1
-# >>> print( mod1.add(3,4) )
+# >>> import mod
+# >>> print( mod.add(3,4) )
 # 7
 # >>> # from 모듈이름 import 모듈함수
-# >>> from mod1 import sum
-# >>> print( sum(3,4) )
+# >>> from mod import add
+# >>> print( add(3,4) )
 # 7
 # >>> exit()
 #
 # """
 
+def sum(a,b):
+    return a+b
+
+def add(a, b):
+    return a+b
+
+
+def sub(a, b):
+    return a-b
