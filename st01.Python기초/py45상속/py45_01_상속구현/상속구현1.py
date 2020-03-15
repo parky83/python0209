@@ -11,3 +11,23 @@
 
 
 # 코딩 하기 
+class Parent():
+    def __init__(self):
+        self.__value="부모 변수"
+    def test(self):
+        print("Parent 클래스의 test() 메서드입니다.")
+    def getVar(self):
+        return self.__value
+    
+        
+        
+class Child(Parent):
+    pass
+#    def __init__(self):
+#        self.__value="자식 변수"
+        
+child=Child()
+child.test()
+val=child.getVar()
+print(val)
+    

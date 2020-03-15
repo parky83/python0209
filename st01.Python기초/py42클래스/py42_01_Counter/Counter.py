@@ -16,3 +16,23 @@
 
 
 # 코딩 하기 
+class Counter:
+    def __init__(self):
+        self.__count=0
+    def reset(self):
+        self.__count=0
+    def increment(self):
+        self.__count+=1
+    def getCount(self):
+        return self.__count
+    def setCount(self):
+        self.increment()
+        
+        
+
+def main():
+    pass
+# 단독 사용시 main()를 호출
+if __name__=="__main__":
+    main()
+        

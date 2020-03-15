@@ -36,3 +36,45 @@
 
 
 # 코딩 하기 
+
+def redic(name, korean, mathmatics, english, science):
+    dic=dict()
+    dic["이름"]=name
+    dic["국어"]=int(korean)
+    dic["수학"]=int(mathmatics)
+    dic["영어"]=int(english)
+    dic["과학"]=int(science)
+    return dic
+
+def calc(dic):
+    총점=dic["국어"]+dic["수학"]+dic["영어"]+dic["과학"]
+    평균=총점/4
+    return 총점, 평균
+
+def student_to_string(학생):
+    총점, 평균=calc(학생)
+
+    str1="이름: %s, 국어 %s, 수학 %s, 영어 %s, 과학 %s, 총점 %s, 평균 %s" %(학생["이름"],학생["국어"],학생["수학"],학생["영어"],학생["과학"], 총점, 평균)
+    return str1
+
+def main():
+    students=[
+        redic('윤인성', 87,  98,  88, 95),
+        redic('연하진', 92,  98,  96, 98),
+        redic('구지연', 76,  96,  94, 90),
+        redic('나선주', 98,  92,  96, 92),
+        redic('윤아린', 95,  98,  98, 98),
+        redic('윤명월', 64,  88,  92, 92),
+        redic('김미화', 82,  86,  98, 88),
+        redic('김연화', 88,  74,  78, 92),
+        redic('박아현', 97,  92,  88, 95),
+        redic('서준서', 45,  52,  72, 78)
+    ]
+
+    for 학생 in students:
+        string=student_to_string(학생)
+        print(string)
+        
+main()
+
+

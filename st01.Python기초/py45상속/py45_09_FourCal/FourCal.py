@@ -16,3 +16,35 @@
 
 
 # 코딩 하기 
+
+class FourCal():
+    def __init__(self, a=0, b=0):
+        self.__a=a
+        self.__b=b
+    def setVar(self, a, b):
+        self.__a=a
+        self.__b=b
+    def add(self):
+        result=self.__a+self.__b
+        return result
+    def sub(self):
+        result=self.__a-self.__b
+        return result
+    def mul(self):
+        result=self.__a*self.__b
+        return result
+    def div(self):
+        result=self.__a/self.__b
+        return result
+    def getVar(self):
+        return self.__a, self.__b
+    
+    
+def main():
+    pass
+# 단독 사용시 main()를 호출
+if __name__=="__main__":
+    main()
+        
+    
+    

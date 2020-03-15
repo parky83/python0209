@@ -16,3 +16,29 @@
 
 
 # 코딩 하기 
+import math
+
+class Circle(object):
+    # 생성자
+    def __init__(self, radius=0):
+        self.radius=radius # 공개변수
+
+    # 사용자 매서드
+    def calcArea(self):
+        result =math.pi*self.radius**2
+        return result
+
+    # 사용자 매서드
+    def calcCircum(self):
+        result = 2*math.pi*self.radius
+        return result
+
+
+        
+
+def main():
+    pass
+# 단독 사용시 main()를 호출
+if __name__=="__main__":
+    main()
+        
